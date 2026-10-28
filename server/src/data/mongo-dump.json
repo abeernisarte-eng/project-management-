@@ -1,0 +1,321 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Alice Morgan",
+      "email": "alice.morgan@example.com",
+      "role": "PROJECT_MANAGER",
+      "passwordHash": "$2b$10$F.l6BNG5rjfxK0e8PW3HZ.n519TwKzO0i3f2Jc0KjR16pjK4yoVQe"
+    },
+    {
+      "id": "u2",
+      "name": "Ben Carter",
+      "email": "ben.carter@example.com",
+      "role": "TEAM_LEAD",
+      "passwordHash": "$2b$10$F.l6BNG5rjfxK0e8PW3HZ.n519TwKzO0i3f2Jc0KjR16pjK4yoVQe"
+    },
+    {
+      "id": "u3",
+      "name": "Chloe Diaz",
+      "email": "chloe.diaz@example.com",
+      "role": "EMPLOYEE",
+      "passwordHash": "$2b$10$F.l6BNG5rjfxK0e8PW3HZ.n519TwKzO0i3f2Jc0KjR16pjK4yoVQe"
+    },
+    {
+      "id": "u4",
+      "name": "David Osei",
+      "email": "david.osei@example.com",
+      "role": "EMPLOYEE",
+      "passwordHash": "$2b$10$F.l6BNG5rjfxK0e8PW3HZ.n519TwKzO0i3f2Jc0KjR16pjK4yoVQe"
+    },
+    {
+      "id": "u5",
+      "name": "Emma Nilsson",
+      "email": "emma.nilsson@example.com",
+      "role": "EMPLOYEE",
+      "passwordHash": "$2b$10$F.l6BNG5rjfxK0e8PW3HZ.n519TwKzO0i3f2Jc0KjR16pjK4yoVQe"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "Client Portal Revamp",
+      "description": "Redesign and rebuild the customer-facing client portal.",
+      "managerId": "u1",
+      "memberIds": [
+        "u2",
+        "u3",
+        "u4"
+      ],
+      "startDate": "2026-08-01",
+      "endDate": "2026-11-30",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "p2",
+      "name": "Internal Reporting Tool",
+      "description": "Build an internal dashboard for weekly ops reporting.",
+      "managerId": "u1",
+      "memberIds": [
+        "u2",
+        "u5"
+      ],
+      "startDate": "2026-09-01",
+      "endDate": "2026-12-15",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": "p3",
+      "name": "Mobile App Beta",
+      "description": "Beta release of the companion mobile app.",
+      "managerId": "u1",
+      "memberIds": [
+        "u3",
+        "u4",
+        "u5"
+      ],
+      "startDate": "2026-06-15",
+      "endDate": "2026-09-15",
+      "status": "COMPLETED"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "projectId": "p1",
+      "title": "Design new login flow",
+      "description": "Wireframes and high-fidelity mockups for the new auth screens.",
+      "assigneeId": "u3",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "dueDate": "2026-10-05",
+      "createdAt": "2026-09-29T09:00:00.000Z",
+      "lastUpdatedAt": "2026-09-29T09:00:00.000Z"
+    },
+    {
+      "id": "t2",
+      "projectId": "p1",
+      "title": "Build billing API endpoints",
+      "description": "CRUD endpoints for invoices and payment methods.",
+      "assigneeId": "u4",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "dueDate": "2026-10-10",
+      "createdAt": "2026-09-28T13:00:00.000Z",
+      "lastUpdatedAt": "2026-09-29T06:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "projectId": "p1",
+      "title": "Set up portal CI pipeline",
+      "description": "GitHub Actions pipeline for lint, test, deploy.",
+      "assigneeId": "u2",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "dueDate": "2026-10-08",
+      "createdAt": "2026-09-27T11:00:00.000Z",
+      "lastUpdatedAt": "2026-09-27T11:00:00.000Z"
+    },
+    {
+      "id": "t4",
+      "projectId": "p2",
+      "title": "Define weekly report schema",
+      "description": "Agree on the data model for weekly ops metrics.",
+      "assigneeId": "u5",
+      "status": "DONE",
+      "priority": "MEDIUM",
+      "dueDate": "2026-09-20",
+      "createdAt": "2026-09-10T09:00:00.000Z",
+      "lastUpdatedAt": "2026-09-19T15:00:00.000Z"
+    },
+    {
+      "id": "t5",
+      "projectId": "p2",
+      "title": "Build chart components",
+      "description": "Reusable chart components for the reporting dashboard.",
+      "assigneeId": "u5",
+      "status": "IN_PROGRESS",
+      "priority": "MEDIUM",
+      "dueDate": "2026-10-12",
+      "createdAt": "2026-09-25T08:00:00.000Z",
+      "lastUpdatedAt": "2026-09-29T05:30:00.000Z"
+    },
+    {
+      "id": "t6",
+      "projectId": "p2",
+      "title": "Review data access permissions",
+      "description": "Ensure only managers can view salary-related metrics.",
+      "assigneeId": "u2",
+      "status": "BLOCKED",
+      "priority": "HIGH",
+      "dueDate": "2026-10-02",
+      "createdAt": "2026-09-26T10:00:00.000Z",
+      "lastUpdatedAt": "2026-09-28T10:00:00.000Z"
+    },
+    {
+      "id": "t7",
+      "projectId": "p3",
+      "title": "Fix crash on splash screen",
+      "description": "Resolve the crash reported by beta testers on cold start.",
+      "assigneeId": "u3",
+      "status": "DONE",
+      "priority": "HIGH",
+      "dueDate": "2026-09-05",
+      "createdAt": "2026-08-30T09:00:00.000Z",
+      "lastUpdatedAt": "2026-09-04T09:00:00.000Z"
+    },
+    {
+      "id": "t8",
+      "projectId": "p3",
+      "title": "Prepare beta release notes",
+      "description": "Summarize fixed issues and known limitations.",
+      "assigneeId": "u4",
+      "status": "DONE",
+      "priority": "LOW",
+      "dueDate": "2026-09-14",
+      "createdAt": "2026-09-08T09:00:00.000Z",
+      "lastUpdatedAt": "2026-09-13T09:00:00.000Z"
+    }
+  ],
+  "timelogs": [
+    {
+      "id": "tl1",
+      "taskId": "t1",
+      "projectId": null,
+      "userId": "u3",
+      "startedAt": "2026-09-29T09:00:00.000Z",
+      "endedAt": "2026-09-29T11:30:00.000Z",
+      "minutes": 150,
+      "note": "Explored two layout directions for the login screen."
+    },
+    {
+      "id": "tl2",
+      "taskId": "t2",
+      "projectId": null,
+      "userId": "u4",
+      "startedAt": "2026-09-28T13:00:00.000Z",
+      "endedAt": "2026-09-28T17:00:00.000Z",
+      "minutes": 240,
+      "note": "Implemented invoice creation and listing endpoints."
+    },
+    {
+      "id": "tl3",
+      "taskId": "t2",
+      "projectId": null,
+      "userId": "u4",
+      "startedAt": "2026-09-29T06:00:00.000Z",
+      "endedAt": null,
+      "minutes": null,
+      "note": "Working on payment method validation."
+    },
+    {
+      "id": "tl4",
+      "taskId": "t5",
+      "projectId": null,
+      "userId": "u5",
+      "startedAt": "2026-09-29T05:30:00.000Z",
+      "endedAt": null,
+      "minutes": null,
+      "note": "Building the line chart component."
+    },
+    {
+      "id": "tl5",
+      "taskId": "t4",
+      "projectId": null,
+      "userId": "u5",
+      "startedAt": "2026-09-19T13:00:00.000Z",
+      "endedAt": "2026-09-19T15:00:00.000Z",
+      "minutes": 120,
+      "note": "Finalized schema fields with the ops team."
+    },
+    {
+      "id": "tl6",
+      "taskId": "t7",
+      "projectId": null,
+      "userId": "u3",
+      "startedAt": "2026-09-04T09:00:00.000Z",
+      "endedAt": "2026-09-04T12:00:00.000Z",
+      "minutes": 180,
+      "note": "Traced crash to a race condition during asset preload."
+    }
+  ],
+  "updateRequests": [],
+  "personalReminders": [],
+  "idleReminders": [
+    {
+      "id": "r1792147111195_oiizpq_t1",
+      "taskId": "t1",
+      "taskTitle": "Design new login flow",
+      "projectId": "p1",
+      "projectName": "Client Portal Revamp",
+      "employeeId": "u3",
+      "employeeName": "Chloe Diaz",
+      "lastActivityTime": "2026-09-29T09:00:00.000Z",
+      "status": "IN_PROGRESS",
+      "reason": "No update for over 3 hours while task is IN_PROGRESS.",
+      "createdAt": "2026-10-16T10:38:31.191Z",
+      "resolved": false,
+      "resolvedAt": null
+    },
+    {
+      "id": "r1792147111301_oqmqkr_t2",
+      "taskId": "t2",
+      "taskTitle": "Build billing API endpoints",
+      "projectId": "p1",
+      "projectName": "Client Portal Revamp",
+      "employeeId": "u4",
+      "employeeName": "David Osei",
+      "lastActivityTime": "2026-09-29T06:00:00.000Z",
+      "status": "IN_PROGRESS",
+      "reason": "No update for over 3 hours while task is IN_PROGRESS.",
+      "createdAt": "2026-10-16T10:38:31.191Z",
+      "resolved": false,
+      "resolvedAt": null
+    },
+    {
+      "id": "r1792147111306_okjco2_t5",
+      "taskId": "t5",
+      "taskTitle": "Build chart components",
+      "projectId": "p2",
+      "projectName": "Internal Reporting Tool",
+      "employeeId": "u5",
+      "employeeName": "Emma Nilsson",
+      "lastActivityTime": "2026-09-29T05:30:00.000Z",
+      "status": "IN_PROGRESS",
+      "reason": "No update for over 3 hours while task is IN_PROGRESS.",
+      "createdAt": "2026-10-16T10:38:31.191Z",
+      "resolved": false,
+      "resolvedAt": null
+    },
+    {
+      "id": "r1792147111314_mcfz7b_t6",
+      "taskId": "t6",
+      "taskTitle": "Review data access permissions",
+      "projectId": "p2",
+      "projectName": "Internal Reporting Tool",
+      "employeeId": "u2",
+      "employeeName": "Ben Carter",
+      "lastActivityTime": "2026-09-28T10:00:00.000Z",
+      "status": "BLOCKED",
+      "reason": "No update for over 3 hours while task is BLOCKED.",
+      "createdAt": "2026-10-16T10:38:31.191Z",
+      "resolved": false,
+      "resolvedAt": null
+    },
+    {
+      "id": "r1792147111257_kklclo_t1",
+      "taskId": "t1",
+      "taskTitle": "Design new login flow",
+      "projectId": "p1",
+      "projectName": "Client Portal Revamp",
+      "employeeId": "u3",
+      "employeeName": "Chloe Diaz",
+      "lastActivityTime": "2026-09-29T09:00:00.000Z",
+      "status": "IN_PROGRESS",
+      "reason": "No update for over 3 hours while task is IN_PROGRESS.",
+      "createdAt": "2026-10-16T10:38:31.252Z",
+      "resolved": false,
+      "resolvedAt": null
+    }
+  ]
+}

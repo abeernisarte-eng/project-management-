@@ -1,0 +1,32 @@
+[
+  {
+    "id": "u1",
+    "name": "Alice Morgan",
+    "email": "alice.morgan@example.com",
+    "role": "PROJECT_MANAGER"
+  },
+  {
+    "id": "u2",
+    "name": "Ben Carter",
+    "email": "ben.carter@example.com",
+    "role": "TEAM_LEAD"
+  },
+  {
+    "id": "u3",
+    "name": "Chloe Diaz",
+    "email": "chloe.diaz@example.com",
+    "role": "EMPLOYEE"
+  },
+  {
+    "id": "u4",
+    "name": "David Osei",
+    "email": "david.osei@example.com",
+    "role": "EMPLOYEE"
+  },
+  {
+    "id": "u5",
+    "name": "Emma Nilsson",
+    "email": "emma.nilsson@example.com",
+    "role": "EMPLOYEE"
+  }
+]

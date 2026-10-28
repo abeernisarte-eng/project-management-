@@ -1,0 +1,98 @@
+[
+  {
+    "id": "t1",
+    "projectId": "p1",
+    "title": "Design new login flow",
+    "description": "Wireframes and high-fidelity mockups for the new auth screens.",
+    "assigneeId": "u3",
+    "status": "IN_PROGRESS",
+    "priority": "HIGH",
+    "dueDate": "2026-10-05",
+    "createdAt": "2026-09-29T09:00:00.000Z",
+    "lastUpdatedAt": "2026-09-29T09:00:00.000Z"
+  },
+  {
+    "id": "t2",
+    "projectId": "p1",
+    "title": "Build billing API endpoints",
+    "description": "CRUD endpoints for invoices and payment methods.",
+    "assigneeId": "u4",
+    "status": "IN_PROGRESS",
+    "priority": "HIGH",
+    "dueDate": "2026-10-10",
+    "createdAt": "2026-09-28T13:00:00.000Z",
+    "lastUpdatedAt": "2026-09-29T06:00:00.000Z"
+  },
+  {
+    "id": "t3",
+    "projectId": "p1",
+    "title": "Set up portal CI pipeline",
+    "description": "GitHub Actions pipeline for lint, test, deploy.",
+    "assigneeId": "u2",
+    "status": "TODO",
+    "priority": "MEDIUM",
+    "dueDate": "2026-10-08",
+    "createdAt": "2026-09-27T11:00:00.000Z",
+    "lastUpdatedAt": "2026-09-27T11:00:00.000Z"
+  },
+  {
+    "id": "t4",
+    "projectId": "p2",
+    "title": "Define weekly report schema",
+    "description": "Agree on the data model for weekly ops metrics.",
+    "assigneeId": "u5",
+    "status": "DONE",
+    "priority": "MEDIUM",
+    "dueDate": "2026-09-20",
+    "createdAt": "2026-09-10T09:00:00.000Z",
+    "lastUpdatedAt": "2026-09-19T15:00:00.000Z"
+  },
+  {
+    "id": "t5",
+    "projectId": "p2",
+    "title": "Build chart components",
+    "description": "Reusable chart components for the reporting dashboard.",
+    "assigneeId": "u5",
+    "status": "IN_PROGRESS",
+    "priority": "MEDIUM",
+    "dueDate": "2026-10-12",
+    "createdAt": "2026-09-25T08:00:00.000Z",
+    "lastUpdatedAt": "2026-09-29T05:30:00.000Z"
+  },
+  {
+    "id": "t6",
+    "projectId": "p2",
+    "title": "Review data access permissions",
+    "description": "Ensure only managers can view salary-related metrics.",
+    "assigneeId": "u2",
+    "status": "BLOCKED",
+    "priority": "HIGH",
+    "dueDate": "2026-10-02",
+    "createdAt": "2026-09-26T10:00:00.000Z",
+    "lastUpdatedAt": "2026-09-28T10:00:00.000Z"
+  },
+  {
+    "id": "t7",
+    "projectId": "p3",
+    "title": "Fix crash on splash screen",
+    "description": "Resolve the crash reported by beta testers on cold start.",
+    "assigneeId": "u3",
+    "status": "DONE",
+    "priority": "HIGH",
+    "dueDate": "2026-09-05",
+    "createdAt": "2026-08-30T09:00:00.000Z",
+    "lastUpdatedAt": "2026-09-04T09:00:00.000Z"
+  },
+  {
+    "id": "t8",
+    "projectId": "p3",
+    "title": "Prepare beta release notes",
+    "description": "Summarize fixed issues and known limitations.",
+    "assigneeId": "u4",
+    "status": "DONE",
+    "priority": "LOW",
+    "dueDate": "2026-09-14",
+    "createdAt": "2026-09-08T09:00:00.000Z",
+    "lastUpdatedAt": "2026-09-13T09:00:00.000Z"
+  }
+]

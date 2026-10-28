@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tl1",
+    "taskId": "t1",
+    "userId": "u3",
+    "startedAt": "2026-09-29T09:00:00.000Z",
+    "endedAt": "2026-09-29T11:30:00.000Z",
+    "minutes": 150,
+    "note": "Explored two layout directions for the login screen."
+  },
+  {
+    "id": "tl2",
+    "taskId": "t2",
+    "userId": "u4",
+    "startedAt": "2026-09-28T13:00:00.000Z",
+    "endedAt": "2026-09-28T17:00:00.000Z",
+    "minutes": 240,
+    "note": "Implemented invoice creation and listing endpoints."
+  },
+  {
+    "id": "tl3",
+    "taskId": "t2",
+    "userId": "u4",
+    "startedAt": "2026-09-29T06:00:00.000Z",
+    "endedAt": null,
+    "minutes": null,
+    "note": "Working on payment method validation."
+  },
+  {
+    "id": "tl4",
+    "taskId": "t5",
+    "userId": "u5",
+    "startedAt": "2026-09-29T05:30:00.000Z",
+    "endedAt": null,
+    "minutes": null,
+    "note": "Building the line chart component."
+  },
+  {
+    "id": "tl5",
+    "taskId": "t4",
+    "userId": "u5",
+    "startedAt": "2026-09-19T13:00:00.000Z",
+    "endedAt": "2026-09-19T15:00:00.000Z",
+    "minutes": 120,
+    "note": "Finalized schema fields with the ops team."
+  },
+  {
+    "id": "tl6",
+    "taskId": "t7",
+    "userId": "u3",
+    "startedAt": "2026-09-04T09:00:00.000Z",
+    "endedAt": "2026-09-04T12:00:00.000Z",
+    "minutes": 180,
+    "note": "Traced crash to a race condition during asset preload."
+  }
+]

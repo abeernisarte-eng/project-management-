@@ -1,0 +1,25 @@
+# Cloudflare Pages + Functions configuration for SPTTS.
+# Deploy: npx wrangler pages deploy client/dist
+# (functions/ is bundled automatically; static assets come from client/dist)
+
+name = "sptts"
+pages_build_output_dir = "client/dist"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Recommended: a Hyperdrive binding so the Worker reaches Postgres through
+# Cloudflare's connection pooler (required for serverless + node-postgres).
+# Create it once, then paste the id here:
+#   npx wrangler hyperdrive create sptts-db \
+#     --connection-string="postgresql://user:pass@host/db?sslmode=require"
+#
+# [[hyperdrive]]
+# binding = "HYPERDRIVE"
+# id = "<hyperdrive-id>"
+
+# Without Hyperdrive, set DATABASE_URL as a secret instead:
+#   npx wrangler pages secret put DATABASE_URL
+# (app.js uses HYPERDRIVE.connectionString when present, else DATABASE_URL.)
+
+# JWT signing secret — set as a secret, never in this file:
+#   npx wrangler pages secret put JWT_SECRET

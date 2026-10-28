@@ -1,0 +1,24 @@
+node_modules/
+dist/
+build/
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+.DS_Store
+server/prisma/dev.db
+server/generated/
+server/src/data/*.sqlite*
+.vscode/
+.idea/
+
+# Wrangler local state + dev secrets
+.wrangler/
+.dev.vars
+
+# Generated at deploy time (copied from server/src)
+functions/_lib/
+
+# Database dumps (never commit)
+backups/

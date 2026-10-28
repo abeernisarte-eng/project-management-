@@ -1,0 +1,25 @@
+{
+  "name": "smart-project-time-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Smart Project Management and Employee Time Tracking System",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace server",
+    "dev:client": "npm run dev --workspace client",
+    "deploy:setup-db": "node server/scripts/setup-db.js",
+    "deploy:preview": "npm run deploy:copy-lib && npx wrangler pages dev client/dist --port 8788",
+    "deploy:pages": "npm run deploy:copy-lib && npm run build --workspace client && npx wrangler pages deploy client/dist",
+    "deploy:copy-lib": "rm -rf functions/_lib && mkdir -p functions/_lib && cp -R server/src/. functions/_lib/"
+  },
+  "dependencies": {
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "license": "UNLICENSED"
+}
