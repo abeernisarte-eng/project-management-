@@ -22,3 +22,6 @@ functions/_lib/
 
 # Database dumps (never commit)
 backups/
+
+# Stale embedded-Mongo data (not code, ~200MB)
+server/src/data/mongo/
